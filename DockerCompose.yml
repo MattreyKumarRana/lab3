@@ -1,0 +1,21 @@
+version: "3"
+
+services:
+  app:
+    build: .
+    ports:
+      - "3306:3306"
+      - "8000:8000"
+    environment:
+      DB_HOST: "mysql"
+      DB_USER: "mrana23"
+      DB_PASSWORD: "Jairam1923"
+      DB_NAME: "lab3"
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mysql:latest
+    environment:
+      MYSQL_ROOT_PASSWORD: "nj@mysql1"
+      MYSQL_DATABASE: "database1"
