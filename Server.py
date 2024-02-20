@@ -1,3 +1,7 @@
+# Name      : Mattrey Kumar Rana
+# Email     : mrana23@myseneca.ca
+# ID        : 116092222
+#Github Link: https://github.com/MattreyKumarRana/lab3
 import mysql.connector
 from http.server import BaseHTTPRequestHandler, HTTPServer
 import json
